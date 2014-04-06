@@ -1,0 +1,77 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include subdir.mk
+-include src/subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# Add doxygen documentation generator
+.PHONY: doxygen
+doxygen:
+	-@mkdir -p $(doxygen_dir)
+	-@echo "Create Doxygen documentation"
+	# disable call graphes, because of the DOT dependencies
+	(cat ./$(COREPATH)/doc/doxygen/ser.doxygen doxygen_config; \
+	echo "HAVE_DOT=no" ;\
+	echo "PROJECT_NAME=AlgorimthsFW" ;\
+	echo "PROJECT_NUMBER=$(NAME)-$(RELEASE)" )| doxygen -
+	-@echo "Doxygen documentation created"
+
+.PHONY: clean_doxygen
+clean_doxygen:
+	-@rm -rf $(doxygen_dir)/{xml,man,rtf,latex,html}
+	-@rmdir --ignore-fail-on-non-empty -p $(doxygen_dir) || true
+
+
+# All Target
+all: FWAlgorithms
+
+# Tool invocations
+FWAlgorithms: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: GCC C++ Linker'
+	g++  -o"FWAlgorithms" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS)$(C++_DEPS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) FWAlgorithms latex html
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

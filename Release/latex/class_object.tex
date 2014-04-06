@@ -1,0 +1,390 @@
+\hypertarget{class_object}{\section{Référence du modèle de la classe Object$<$ O, stat $>$}
+\label{class_object}\index{Object$<$ O, stat $>$@{Object$<$ O, stat $>$}}
+}
+
+
+{\ttfamily \#include $<$Object.\-hpp$>$}
+
+
+
+Graphe de collaboration de Object$<$ O, stat $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_a399244a9ba73c47997b5be3693cb497a}{Object} ()
+\item 
+\hyperlink{class_object_af5e2f97337e0536c71295cf2fc494534}{Object} (const O \&\hyperlink{class_object_ad6c327fe66540b59a513df29f755af4b}{elt})
+\item 
+virtual \hyperlink{class_object_a01a69e07247d7562664d90815e53b754}{$\sim$\-Object} ()
+\item 
+void \hyperlink{class_object_ab02a6925b233e2cecc5d05dcb63647b0}{operator=} (O \&\hyperlink{class_object_ad6c327fe66540b59a513df29f755af4b}{elt})
+\item 
+void \hyperlink{class_object_ab3871ba21ae0189d0c95f370d69bf3af}{operator=} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_a1bff680d166704176bc6624e14b236fc}{operator$>$} (const O \&o)
+\item 
+bool \hyperlink{class_object_a285ff5c6899aa00a40caf7394adba387}{operator$>$} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_a99b754624fdc54c737db3fb9cb629c66}{operator$<$} (const O \&o)
+\item 
+bool \hyperlink{class_object_ad56b7d529e52f15cb04e2379613cc7be}{operator$<$} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_a9104e48bac2c6c9e01cef5ef5ce3f4e1}{operator$<$=} (const O \&o)
+\item 
+bool \hyperlink{class_object_a815b8628a0421c81d5ae55287d5252a4}{operator$<$=} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_ab4abe75a80657646dbff7843d2d9b657}{operator$>$=} (const O \&o)
+\item 
+bool \hyperlink{class_object_a05637618e50fc65d1c0d7bf3cd9472dd}{operator$>$=} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_a99010f4bd7aa5ca78c1eb2641e31f8f9}{operator==} (const O \&o)
+\item 
+bool \hyperlink{class_object_a266585d94b0deb105465fa7c89e8a1d9}{operator==} (const \hyperlink{class_object}{Object} \&o)
+\item 
+bool \hyperlink{class_object_a74a09ebb7325affab7a36722447ba3be}{operator!=} (const O \&o)
+\item 
+bool \hyperlink{class_object_ad9c2e8211d7e3822f88b56ef74a453e6}{operator!=} (const \hyperlink{class_object}{Object} \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a0b5ab29ee535166da73a9663e40a404e}{operator$^\wedge$} (const O \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a5e700ab1a5b8d7f03ab44e841fb0efcb}{operator$^\wedge$} (const \hyperlink{class_object}{Object} \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a70555fefbc0832da61fda166b40aa6a8}{operator\&} (const O \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a40ff14af9a98f948767b6a4c41ef215e}{operator\&} (const \hyperlink{class_object}{Object} \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a10746acda9c977db58ce84678e027203}{operator$|$} (const O \&o)
+\item 
+\hyperlink{class_object}{Object} \& \hyperlink{class_object_a37e2268c6564f146ccac90d1a1a108e3}{operator$\sim$} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+O \hyperlink{class_object_ad6c327fe66540b59a513df29f755af4b}{elt}
+\end{DoxyCompactItemize}
+\subsection*{Amis}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_object_ab508b58bf37e341435dc0825e8274cb0}{operator$<$$<$} (ostream \&os, const \hyperlink{class_object}{Object} \&o)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+\subsubsection*{template$<$class O, Stat $\ast$ stat$>$class Object$<$ O, stat $>$}
+
+La classe \hyperlink{class_object}{Object} répresente un modele de classe de type O et une réference vers une instance de statistique. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_object_a399244a9ba73c47997b5be3693cb497a}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}$<$ O, stat $>$\-::{\bf Object} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a399244a9ba73c47997b5be3693cb497a}
+Constructeur. Donne une valeur par défaut et un type O de cet objet. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em O} & type de l'objet à construire. \\
+\hline
+{\em stat} & réference vers la statistiques en cours d'utilisation. \\
+\hline
+\end{DoxyTemplParams}
+\hypertarget{class_object_af5e2f97337e0536c71295cf2fc494534}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}$<$ O, stat $>$\-::{\bf Object} (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{elt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_af5e2f97337e0536c71295cf2fc494534}
+Constructeur. Donne une réference vers un element de type O à cet objet. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em O} & type de l'objet à construire. \\
+\hline
+{\em stat} & réference vers la statistiques en cours d'utilisation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Paramètres}
+{\em elt} & réference vers un element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a01a69e07247d7562664d90815e53b754}{\index{Object@{Object}!$\sim$\-Object@{$\sim$\-Object}}
+\index{$\sim$\-Object@{$\sim$\-Object}!Object@{Object}}
+\subsubsection[{$\sim$\-Object}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ virtual {\bf Object}$<$ O, stat $>$\-::$\sim${\bf Object} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_object_a01a69e07247d7562664d90815e53b754}
+Destructeur. Detruit une object \hyperlink{class_object}{Object} 
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_object_a74a09ebb7325affab7a36722447ba3be}{\index{Object@{Object}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Object@{Object}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a74a09ebb7325affab7a36722447ba3be}
+Surcharge de l'operateur de comparaison != 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_ad9c2e8211d7e3822f88b56ef74a453e6}{\index{Object@{Object}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Object@{Object}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_ad9c2e8211d7e3822f88b56ef74a453e6}
+Surcharge de l'operateur de comparaison != 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a70555fefbc0832da61fda166b40aa6a8}{\index{Object@{Object}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!Object@{Object}}
+\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator\& (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a70555fefbc0832da61fda166b40aa6a8}
+Surcharge de l'operateur bit a bit \& 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a40ff14af9a98f948767b6a4c41ef215e}{\index{Object@{Object}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!Object@{Object}}
+\subsubsection[{operator\&}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator\& (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a40ff14af9a98f948767b6a4c41ef215e}
+Surcharge de l'operateur bit a bit \& 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a99b754624fdc54c737db3fb9cb629c66}{\index{Object@{Object}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Object@{Object}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a99b754624fdc54c737db3fb9cb629c66}
+Surcharge de l'operateur de comparaison $<$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_ad56b7d529e52f15cb04e2379613cc7be}{\index{Object@{Object}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Object@{Object}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_ad56b7d529e52f15cb04e2379613cc7be}
+Surcharge de l'operateur de comparaison $<$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a9104e48bac2c6c9e01cef5ef5ce3f4e1}{\index{Object@{Object}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Object@{Object}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a9104e48bac2c6c9e01cef5ef5ce3f4e1}
+Surcharge de l'operateur de comparaison $<$= 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a815b8628a0421c81d5ae55287d5252a4}{\index{Object@{Object}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Object@{Object}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a815b8628a0421c81d5ae55287d5252a4}
+Surcharge de l'operateur de comparaison $<$= 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_ab02a6925b233e2cecc5d05dcb63647b0}{\index{Object@{Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Object@{Object}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ void {\bf Object}$<$ O, stat $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{O \&}]{elt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_ab02a6925b233e2cecc5d05dcb63647b0}
+Surcharge de l'operateur d'affectation = 
+\begin{DoxyParams}{Paramètres}
+{\em elt} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_ab3871ba21ae0189d0c95f370d69bf3af}{\index{Object@{Object}!operator=@{operator=}}
+\index{operator=@{operator=}!Object@{Object}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ void {\bf Object}$<$ O, stat $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_ab3871ba21ae0189d0c95f370d69bf3af}
+Surcharge de l'operateur d'affectation = 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a99010f4bd7aa5ca78c1eb2641e31f8f9}{\index{Object@{Object}!operator==@{operator==}}
+\index{operator==@{operator==}!Object@{Object}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a99010f4bd7aa5ca78c1eb2641e31f8f9}
+Surcharge de l'operateur de comparaison == 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a266585d94b0deb105465fa7c89e8a1d9}{\index{Object@{Object}!operator==@{operator==}}
+\index{operator==@{operator==}!Object@{Object}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a266585d94b0deb105465fa7c89e8a1d9}
+Surcharge de l'operateur de comparaison == 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a1bff680d166704176bc6624e14b236fc}{\index{Object@{Object}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Object@{Object}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a1bff680d166704176bc6624e14b236fc}
+Surcharge de l'operateur de comparaison $>$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a285ff5c6899aa00a40caf7394adba387}{\index{Object@{Object}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Object@{Object}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a285ff5c6899aa00a40caf7394adba387}
+Surcharge de l'operateur de comparaison $>$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_ab4abe75a80657646dbff7843d2d9b657}{\index{Object@{Object}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Object@{Object}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_ab4abe75a80657646dbff7843d2d9b657}
+Surcharge de l'operateur de comparaison $>$= 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a05637618e50fc65d1c0d7bf3cd9472dd}{\index{Object@{Object}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Object@{Object}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ bool {\bf Object}$<$ O, stat $>$\-::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a05637618e50fc65d1c0d7bf3cd9472dd}
+Surcharge de l'operateur de comparaison $>$= 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a0b5ab29ee535166da73a9663e40a404e}{\index{Object@{Object}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!Object@{Object}}
+\subsubsection[{operator$^\wedge$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator$^\wedge$ (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a0b5ab29ee535166da73a9663e40a404e}
+Surcharge de l'operateur bit a bit $^\wedge$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a5e700ab1a5b8d7f03ab44e841fb0efcb}{\index{Object@{Object}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!Object@{Object}}
+\subsubsection[{operator$^\wedge$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator$^\wedge$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a5e700ab1a5b8d7f03ab44e841fb0efcb}
+Surcharge de l'operateur bit a bit $^\wedge$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un objet (\hyperlink{class_object}{Object}). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a10746acda9c977db58ce84678e027203}{\index{Object@{Object}!operator$|$@{operator$|$}}
+\index{operator$|$@{operator$|$}!Object@{Object}}
+\subsubsection[{operator$|$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator$|$ (
+\begin{DoxyParamCaption}
+\item[{const O \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a10746acda9c977db58ce84678e027203}
+Surcharge de l'operateur bit a bit $|$ 
+\begin{DoxyParams}{Paramètres}
+{\em o} & un element de type O. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_object_a37e2268c6564f146ccac90d1a1a108e3}{\index{Object@{Object}!operator$\sim$@{operator$\sim$}}
+\index{operator$\sim$@{operator$\sim$}!Object@{Object}}
+\subsubsection[{operator$\sim$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ {\bf Object}\& {\bf Object}$<$ O, stat $>$\-::operator$\sim$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_object_a37e2268c6564f146ccac90d1a1a108e3}
+Surcharge de l'operateur bit a bit $\sim$ 
+
+\subsection{Documentation des fonctions amies et associées}
+\hypertarget{class_object_ab508b58bf37e341435dc0825e8274cb0}{\index{Object@{Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Object@{Object}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Object}$<$ O, stat $>$ \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_object_ab508b58bf37e341435dc0825e8274cb0}
+Operateur de redirection du flux de sortie standard cout 
+\begin{DoxyParams}{Paramètres}
+{\em os} & flux de sortie standard \\
+\hline
+{\em o} & un objet \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_object_ad6c327fe66540b59a513df29f755af4b}{\index{Object@{Object}!elt@{elt}}
+\index{elt@{elt}!Object@{Object}}
+\subsubsection[{elt}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class O, Stat $\ast$ stat$>$ O {\bf Object}$<$ O, stat $>$\-::elt\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_object_ad6c327fe66540b59a513df29f755af4b}
+élement de type O. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+/home/ufr\-\_\-info/workspace/\-F\-W\-Algorithms/header/Object.\-hpp\end{DoxyCompactItemize}
