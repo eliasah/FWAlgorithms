@@ -5,7 +5,7 @@
  * par exemple être simplement conduit à indiquer qu’il souhaite mesurer
  * un algorithme sur des Entiers (exemple quicksort sur les tableaux d’ints).
  *
- * @author Richard Isabelle, Abou Haydar Elias, Ourfahli Anthony
+ * @author Richard Isabelle, Abou Haydar Elias
  **/
 
 
